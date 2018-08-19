@@ -24,10 +24,6 @@ class Solution:
             except ValueError:
 
                 break
-            print(lst)
-            return lst
-sol = Solution()
-sol.shortestToChar('inderpalsinghmatharu', 'e')
+        return lst
 
-# print(sol.string)
-# print(sol.char)
+
