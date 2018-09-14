@@ -1,0 +1,16 @@
+class Solution(object):
+    def projectionArea(self, grid):
+        """
+        :type grid: List[List[int]]
+        :rtype: int
+        """
+        self.grid = grid
+        self.grid_transpose = list(zip(*self.grid))
+        a = (len(self.grid[0]))
+        b = (sum([max(i) for i in self.grid]))
+        c = ((sum([max(row) for row in self.grid_transpose])))
+        return a+b+c
+        
+
+s1 = Solution()
+s1.projectionArea([[1,2,3],[4,5,6],[7,8,9]])
